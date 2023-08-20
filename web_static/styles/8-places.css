@@ -7,6 +7,7 @@
 .container .places ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .container .places article {
