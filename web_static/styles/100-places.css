@@ -1,127 +1,122 @@
-.container .places {
-  width: 100%;
-  font-size: 30px;
-  margin-bottom: 100px;
+.places {
+  margin-bottom: 60px;
 }
-
-.container .places ul {
+.boxes {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.places h1 {
+  font-size: 30px;
+  vertical-align: top;
+  text-align: left;
+  padding: 10px 15px;
 }
 
-.container .places article {
+.places article {
   width: 390px;
   padding: 20px;
   margin: 20px;
-  border: 1px #ff5a5f solid;
+  border: #ff5a5f solid 1px;
   border-radius: 4px;
+  display: inline-block;
+  position: relative;
 }
-.container .places article h2 {
+
+.places h2 {
   font-size: 30px;
   text-align: center;
 }
-.container .places article .price_by_night {
-  position: relative;
+
+.places .price_by_night {
   color: #ff5a5f;
-  border: 4px #ff5a5f solid;
+  border: #ff5a5f solid 4px;
   border-radius: 50%;
   min-width: 60px;
-  width: 60px;
   height: 60px;
   font-size: 30px;
+  right: 5%;
+  top: 5%;
+  position: absolute;
   display: flex;
   justify-content: center;
-  margin: -50px 0 10px 80%;
+  align-items: center;
 }
-.container .places article .price_by_night span {
-  font-size: 26px;
-  position: absolute;
-  top: 20px;
-}
-.container .places article .information {
+
+.information {
   height: 80px;
-  border-top: 1px #dddddd solid;
-  border-bottom: 1px #dddddd solid;
+  border-top: #dddddd solid 1px;
+  border-bottom: #dddddd solid 1px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
-.container .places article .information div {
-  padding: 5px;
-  position: relative;
+
+.max_guest,
+.number_rooms,
+.number_bathrooms {
   width: 100px;
+}
+
+.max_guest p,
+.number_rooms p,
+.number_bathrooms p {
+  margin: 0;
+}
+
+.img1 {
+  background-image: url("../images/icon_group.png");
   background-repeat: no-repeat;
   background-position: center;
+  height: 50px;
 }
-.container .places article .information .max_guest {
-  background-image: url(../images/icon_group.png);
-}
-.container .places article .information .number_rooms {
-  background-image: url(../images/icon_bed.png);
-}
-.container .places article .information .number_bathrooms {
-  background-image: url(../images/icon_bath.png);
-}
-.container .places article .information div span {
-  position: absolute;
-  font-size: 10px;
-  top: 60px;
-  left: 30%;
-}
-.container .places article .user {
-  margin-top: 10px;
-  font-size: medium;
-}
-.container .places article .description {
-  font-size: small;
-}
-.container .places article .amenities {
-  margin-top: 40px;
-}
-.container .places article .amenities h2 {
-  font-size: 16px;
-  text-align: left;
-  border-bottom: 1px #dddddd solid;
-}
-.container .places article .amenities ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-.container .places article .amenities li {
-  margin-bottom: 5px;
+
+.img2 {
+  background-image: url("../images/icon_bed.png");
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
+  background-position: center;
+  height: 50px;
 }
-.container .places article .amenities li.icon_pet {
-  background-image: url(../images/icon_pets.png);
+
+.img3 {
+  background-image: url("../images/icon_bath.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
 }
-.container .places article .amenities li.icon_tv {
-  background-image: url(../images/icon_tv.png);
+
+.user {
+  text-align: initial;
+  padding: 10px 0;
 }
-.container .places article .amenities li.icon_wifi {
-  background-image: url(../images/icon_wifi.png);
-}
-.container .places article .amenities li span {
-  font-size: 15px;
-  margin-left: 40px;
-}
-.container .places article .reviews {
+
+article .amenities,
+article .reviews {
   margin-top: 40px;
 }
-.container .places article .reviews h2 {
+article .amenities h2,
+article .reviews h2 {
+  text-align: initial;
   font-size: 16px;
-  text-align: left;
-  border-bottom: 1px #dddddd solid;
+  border-bottom: #dddddd solid 1px;
 }
-.container .places article .reviews ul {
+
+article .amenities ul,
+article .reviews ul {
   list-style: none;
+  margin: 0%;
+  padding: 0%;
 }
-.container .places article .reviews h3 {
+
+article .amenities ul li {
+  padding: 5px;
+}
+
+article .reviews h3 {
   font-size: 14px;
 }
-.container .places article .reviews p {
+
+article .reviews p {
   font-size: 12px;
 }
